@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ThemeDropdown } from '#components';
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -45,7 +46,10 @@ import { Icon } from '@iconify/vue'
         </ul>
       </div>
     </div>
-    <div class="flex items-center justify-center py-12">
+    <div class="flex items-center justify-center py-12 relative">
+      <div class="absolute top-1 right-1">
+        <ThemeDropdown/>
+      </div>
       <div class="mx-auto grid w-[500px] gap-6">
         <div class="grid gap-2 text-center">
           <h1 class="text-3xl font-bold">
@@ -66,13 +70,13 @@ import { Icon } from '@iconify/vue'
           </Button>
         </div>
         <div class="flex items-center justify-center relative my-5">
-          <div class="absolute bg-white z-10 w-[50px] text-center">ou</div>
+          <div class="absolute bg-white dark:bg-slate-950 z-10 w-[50px] text-center">ou</div>
           <div class="border-b w-full"></div>
         </div>
         <div class="grid gap-6">
           <div class="grid gap-2">
             <Label for="email">Email</Label>
-            <Input id="email" type="email" class="bg-slate-300" placeholder="m@example.com" required />
+            <Input id="email" type="email" class="bg-slate-300 dark:text-black" placeholder="m@example.com" required />
           </div>
           <div class="grid gap-2">
             <div class="flex items-center">
@@ -81,7 +85,7 @@ import { Icon } from '@iconify/vue'
                 Esqueçe a senha?
               </a>
             </div>
-            <Input id="password" type="password" class="bg-slate-300" required />
+            <Input id="password" type="password" class="bg-slate-300 dark:text-black" required />
           </div>
           <Button type="submit" class="w-full">
             Entrar
