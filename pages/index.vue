@@ -35,6 +35,9 @@
               <NuxtLink to="/login">
                 <Button class="rounded-full text-lg p-3 w-32 bg-white hover:text-black hover:bg-white text-black">Login</Button>
               </NuxtLink>
+              <NuxtLink to="/auth/admin">
+                <Button class="rounded-full text-lg ml-2 p-3 w-32 bg-white hover:text-black hover:bg-white text-black">Admin</Button>
+              </NuxtLink>
             </div>
           </div>
           <div class="shrink">

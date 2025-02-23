@@ -1,5 +1,5 @@
 <template>
-  <div>Hello</div>
+  <div>Permissions</div>
 </template>
 <script lang="ts" setup>
   definePageMeta({
